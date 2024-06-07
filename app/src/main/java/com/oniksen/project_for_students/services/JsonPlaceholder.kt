@@ -1,8 +1,6 @@
 package com.oniksen.project_for_students.services
 
 import com.oniksen.project_for_students.model.dataClasses.PostsPlaceholder
-import com.oniksen.project_for_students.model.dataClasses.PostsPlaceholderItem
-import com.oniksen.project_for_students.model.room.RoomPost
 import retrofit2.Response
 import retrofit2.http.GET
 

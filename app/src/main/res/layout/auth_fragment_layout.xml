@@ -18,7 +18,7 @@
             android:id="@+id/loginText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Login"
+            android:hint="@string/auth_fragment_login_hint"
             android:gravity="center"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -33,7 +33,7 @@
             android:id="@+id/passText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Login"
+            android:hint="@string/auth_fragment_pass_hint"
             android:gravity="center"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/passTextLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Авторизация"
+        android:text="@string/auth_fragment_auth_btn"
         android:layout_marginTop="34dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

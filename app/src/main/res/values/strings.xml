@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">project_for_students</string>
+
+    <string name="auth_fragment_login_hint">Логин</string>
+    <string name="auth_fragment_pass_hint">Пароль</string>
+    <string name="auth_fragment_auth_btn">Авторизация</string>
 </resources>

@@ -5,6 +5,9 @@ import androidx.room.Insert
 import androidx.room.Query
 import com.oniksen.project_for_students.model.dataClasses.PostsPlaceholderItem
 
+/**
+ * Абстрактный интерфейс реализующий запросы к базе.
+ * */
 @Dao
 interface RoomPostsDao {
 

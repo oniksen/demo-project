@@ -11,6 +11,9 @@ import com.oniksen.project_for_students.databinding.ActivityMainBinding
 import com.oniksen.project_for_students.fragments.AuthFragment
 import com.oniksen.project_for_students.viewModels.JsonPlaceholderViewModel
 
+/**
+ * На этом activity и на всех фрагментах будет использоваться система View Binding
+ * */
 class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding!!
@@ -31,9 +34,15 @@ class MainActivity : AppCompatActivity() {
         initViewModel()
         openAuthFragment()
     }
+    /**
+     * Стандартный способ инициализации ViewModel
+     * */
     private fun initViewModel() {
         placeholderViewModel = ViewModelProvider(this)[JsonPlaceholderViewModel::class.java]
     }
+    /**
+     * Открытие первого фрагмента для авторизации
+     * */
     private fun openAuthFragment() {
         supportFragmentManager.beginTransaction()
             .replace(binding.fragmentContainer.id, AuthFragment.getInstance())
